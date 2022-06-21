@@ -1,0 +1,16 @@
+{
+    [
+        {
+            "type": "Products.Apple",
+            "price": 100,
+            "title": "apple",
+            "color": "green"
+        },
+        {
+            "type": "Products.Orange",
+            "price": 200,
+            "title": "orange",
+            "eatable": false
+        }
+    ]
+}
