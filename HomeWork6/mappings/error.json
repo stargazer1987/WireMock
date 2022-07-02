@@ -1,0 +1,16 @@
+{
+	"priority": 10,
+    "request": {
+		"urlPathPattern": ".*",
+		"method": "ANY"
+    },
+    "response": {
+        "status": 404,
+        "delayDistribution": {
+			"type": "uniform",
+			"lower": 30,
+			"upper": 50
+		},
+		"bodyFileName": "error404.xml"
+    }
+}

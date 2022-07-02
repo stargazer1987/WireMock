@@ -1,0 +1,628 @@
+{
+	"info": {
+		"_postman_id": "1aea08ea-2fd5-4462-9392-add0c2430e6b",
+		"name": "WireMock6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ClassWork",
+			"item": [
+				{
+					"name": "address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<Address>\r\n    <Name>Nikolay</Name>\r\n    <Street>La Rambla</Street>\r\n    <City>Barcelona</City>\r\n</Address>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/address/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"address",
+								"12"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<Address>\r\n    <Name>Nikolay</Name>\r\n    <Street>La Rambla</Street>\r\n    <City>Barcelona</City>\r\n</Address>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/address/12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"address",
+										"12"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Matched-Stub-Id",
+									"value": "51c41948-32ac-4445-a403-2ae909f9c2a7"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "There is such address"
+						}
+					]
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<user>\r\n    <login>Nikolay12</login>\r\n    <password>4567tyu</password>\r\n</user>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<user>\r\n    <login>Nikolay12</login>\r\n    <password>4567tyu</password>\r\n</user>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/user/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"user",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Matched-Stub-Id",
+									"value": "24737e18-0667-404c-8a23-23474a68b557"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "There is such user"
+						}
+					]
+				},
+				{
+					"name": "products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<products>\r\n    <product>\r\n        <name>pepper</name>\r\n        <price>44</price>\r\n    </product>\r\n    <product>\r\n        <name>salt</name>\r\n        <price>42</price>\r\n    </product>\r\n</products>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<products>\r\n    <product>\r\n        <name>pepper</name>\r\n        <price>44</price>\r\n    </product>\r\n    <product>\r\n        <name>salt</name>\r\n        <price>42</price>\r\n    </product>\r\n</products>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Matched-Stub-Id",
+									"value": "8721442f-1644-4d25-8636-742ba87fc1e5"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "Such product exists"
+						}
+					]
+				},
+				{
+					"name": "template1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/template?nameOfFile=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"template"
+							],
+							"query": [
+								{
+									"key": "nameOfFile",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/template?nameOfFile=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"template"
+									],
+									"query": [
+										{
+											"key": "nameOfFile",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Matched-Stub-Id",
+									"value": "58c635b2-3633-47c2-910d-23c449e3fb1f"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n   \"response\": \"ok\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "HomeWork",
+			"item": [
+				{
+					"name": "file",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/file?format=.xls&filename=111223",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"file"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": ".xls"
+								},
+								{
+									"key": "filename",
+									"value": "111223"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/file?format=.xls&filename=111223",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"file"
+									],
+									"query": [
+										{
+											"key": "format",
+											"value": ".xls"
+										},
+										{
+											"key": "filename",
+											"value": "111223"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Matched-Stub-Id",
+									"value": "001aa97c-ccdc-4bcd-9807-30da9b94e3db"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\"my file is: file111223.xls\"}"
+						}
+					]
+				},
+				{
+					"name": "error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/kuku",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"kuku"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "404 not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/kuku",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"kuku"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Matched-Stub-Id",
+									"value": "80a227ed-5eaa-4c68-a1b6-5918f9fa0a02"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "<error>\r\n    <error_code>404</error_code>\r\n    <description>Division by zero</description>\r\n</error>"
+						}
+					]
+				},
+				{
+					"name": "order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order\": \"132-24-BB\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"order\": \"132-24-AA\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/order",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"order"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Matched-Stub-Id",
+									"value": "f1d2c2c1-5879-4e03-bfd9-22a435a04829"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"order\": \"132-24-AA\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<users>\r\n    <user>\r\n        <name>user12</name>\r\n        <age>23</age>\r\n    </user>\r\n    <user>\r\n        <name>user2</name>\r\n        <age>30</age>\r\n    </user>\r\n    <user>\r\n        <name>user3321545252252352</name>\r\n        <age>25</age>\r\n    </user>\r\n</users>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200 OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "<users>\r\n    <user>\r\n        <name>user12</name>\r\n        <age>23</age>\r\n    </user>\r\n    <user>\r\n        <name>user2</name>\r\n        <age>30</age>\r\n    </user>\r\n    <user>\r\n        <name>user3321545252252352</name>\r\n        <age>25</age>\r\n    </user>\r\n</users>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Matched-Stub-Id",
+									"value": "f783d32b-8559-4193-942e-bfa9c099002c"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding, User-Agent"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "user12 user2 user3321545252252352 "
+						}
+					]
+				}
+			]
+		}
+	]
+}

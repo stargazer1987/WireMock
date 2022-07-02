@@ -1,0 +1,16 @@
+{
+    "request": {
+		"urlPathPattern": "/address/([0-9]*)",
+		"method": "POST",
+		"bodyPatterns" : [
+			{
+				"equalToXml": "<Address><Name>Nikolay</Name><Street>La Rambla</Street><City>Barcelona</City></Address>"
+			}
+		]
+    },
+    "response": {
+        "status": 200,
+        "fixedDelayMilliseconds": 2000,
+		"body": "There is such address"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "request": {
+		"urlPathPattern": "/order",
+		"method": "POST",
+		"bodyPatterns" : [
+			{
+				"matchesJsonPath": "$[?(@.order=~/[0-9]{3}-[0-9]{2}-([0-9]{2}||[a-zA-Z]{2})/)]"
+			}
+		]
+    },
+    "response": {
+        "status": 200,
+        "delayDistribution": {
+			"type": "uniform",
+			"lower": 290,
+			"upper": 310
+		},
+		"body": "{{{request.body}}}"
+    }
+}
