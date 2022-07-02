@@ -1,0 +1,18 @@
+{
+    "request": {
+	"urlPathPattern": "/registration",
+        "method": "GET",
+		"bodyPatterns": [
+			{
+				"contains": "login"
+			},
+			{
+				"contains": "password"
+			}
+		]
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "registration.json"
+    }
+}

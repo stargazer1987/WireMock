@@ -1,0 +1,15 @@
+{
+    "request": {
+		"urlPathPattern": "/numberOfAnimals",
+		"method": "GET",
+		"bodyPatterns" : [
+			{
+				"equalToJson": "{\"animals\":100}"
+			}
+		]
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "numberOfAnimals.json"
+    }
+}

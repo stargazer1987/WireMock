@@ -1,0 +1,15 @@
+{
+    "request": {
+		"urlPathPattern": "/check",
+		"queryParameters": {
+			"name": {
+				"matches": "([a-zA-Z0-9])*"
+			}
+		},
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": "{{request.query.name}}"
+    }
+}

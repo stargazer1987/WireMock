@@ -1,0 +1,18 @@
+{
+    "request": {
+		"urlPathPattern": "/test",
+		"queryParameters": {
+			"name": {
+				"matches": "([a-zA-Z0-9]*)"
+			},
+			"age": {
+				"matches": "([0-9]*)"
+			}
+		},
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "test.json"
+    }
+}

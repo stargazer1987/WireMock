@@ -1,0 +1,15 @@
+{
+    "request": {
+		"urlPathPattern": "/error",
+		"method": "GET",
+		"bodyPatterns" : [
+			{
+				"equalToJson": "{\"error_code\":123, \"description\":\"Division by zero\"}"
+			}
+		]
+    },
+    "response": {
+        "status": 404,
+        "body": "Division by zero. Code 123"
+    }
+}

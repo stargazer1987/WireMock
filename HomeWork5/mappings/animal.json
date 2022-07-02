@@ -1,0 +1,10 @@
+{
+    "request": {
+		"urlPathPattern": "/animal/([0-9]*)",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "animal.json"
+    }
+}
